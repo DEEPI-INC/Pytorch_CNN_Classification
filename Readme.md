@@ -7,7 +7,7 @@
 * 경로 설정
 ```python
 dst_tr = 'path/for/train/dataset'
-dst_te = 'path/for/te/dataset'
+dst_te = 'path/for/test/dataset'
 ```
 
 * 클래스 인덱스 및 파라미 설정
