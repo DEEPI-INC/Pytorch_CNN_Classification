@@ -157,7 +157,7 @@ def train(Tr_loader, Val_loader, Epoch, Lr, Model):
         vl.append(err_val / len(Val_loader))
         va.append(round(correct_val / total_val, 3))
         
-        print(f"Epoch {_ep + 1}/{Epoch} - Training Loss: {err_tr / len(Tr_loader):.4f}, "
+        print(f"Epoch {_ep + 1}/{Epoch} - Train Loss: {err_tr / len(Tr_loader):.4f}, "
               f"Validation Loss: {err_val / len(Val_loader):.4f}, Validation Accuracy: {round(correct_val / total_val, 3)}")
     
     plt.figure(figsize=(12, 8))
@@ -168,7 +168,7 @@ def train(Tr_loader, Val_loader, Epoch, Lr, Model):
     plt.plot(range(1, Epoch + 1), vl, marker='o', color='r', label='Valid Loss')
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
-    plt.title('Training and Validation Loss')
+    plt.title('Train and Validation Loss')
     plt.legend()
 
     # Plotting Accuracy
@@ -177,7 +177,7 @@ def train(Tr_loader, Val_loader, Epoch, Lr, Model):
     plt.plot(range(1, Epoch + 1), va, marker='o', color='r', label='Valid Accuracy')
     plt.xlabel('Epoch')
     plt.ylabel('Accuracy (%)')
-    plt.title('Training and Validation Accuracy')
+    plt.title('Train and Validation Accuracy')
     plt.legend()
 
     plt.tight_layout()
