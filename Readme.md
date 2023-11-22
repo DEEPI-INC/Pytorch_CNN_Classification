@@ -10,7 +10,7 @@ dst_tr = 'path/for/train/dataset'
 dst_te = 'path/for/test/dataset'
 ```
 
-* 클래스 인덱스 및 파라미 설정
+* 클래스 인덱스 및 파라미터 설정
 ```python
 kls = os.listdir(dst_tr) # set class idx
 size, ratio, batch, lr, epoch = 224, 0.7, 10, 1e-5, 10
